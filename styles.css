@@ -1,0 +1,201 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    background: #353535;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #27ae39;
+    transform: scale(1.1);
+}
+
+/* Section styles */
+section {
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about, .team, .competitions {
+    background: #1b1b1b;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.team-member {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #214627;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* Contact button styles */
+.contact-button {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 320px;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #11522c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-link:hover {
+    background: #27ae39;
+}
+
+/* Team photo styles */
+.team-photo, .curs-photo {
+    width: 170px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 15px; /* Space between image and text */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+/* Body and text styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #141414;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: relative;
+    background: #353535;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #018317;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+    color: #4da05a;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0;
+}
+
+/* Logo styles */
+.team-logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    height: 100px;
+    width: auto;
+}
+
+/* Main content area to stretch and allow footer to stay at the bottom */
+#main-content {
+    flex: 1;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Footer position fix */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img.team-logo {
+       width: 80px; /* Adjust logo size for mobile */
+        height: auto;
+        margin-bottom: 10px; /* Space below the logo */
+        position: relative; /* Use relative positioning for centering */
+        left: 0; /* Center horizontally */
+    }
+
+    header h1 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align the buttons */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Center align the list items */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        width: 100%; /* Make buttons take full width */
+        text-align: center;
+        font-size: 14px;
+    }
+}
